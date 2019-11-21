@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.text-black {
+    color: black;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#game-container table {
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+#gameModal img {
+    max-height: 50vh;
+    max-width: 100%;
+}
+
+.best-score {
+    font-size: 10px;
+}
+
+.game-level button {
+    width: 100px;
+}
+
+.modal-dialog {
+    margin-top: 60px !important;
+}
+
+#clocktext {
+    letter-spacing: 1px;
+}
+
+#game-container #game td.square.hinted {
+    background: yellow;
+}
