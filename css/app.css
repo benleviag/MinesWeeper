@@ -75,6 +75,6 @@ header {
     letter-spacing: 1px;
 }
 
-#game-container #game td.square.hinted {
+#game-container.Ben #game td.square.hinted {
     background: yellow;
 }
