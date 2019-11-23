@@ -23,15 +23,10 @@
             <button class="btn btn-success btn-xs" onclick="GameMode('Ben')">Ben Mode</button>
         </h5>
         <span class="game-level">
-            <button class="btn btn-primary btn-md" onclick="initGame('Beginner')">Beginner<br><span class="best-score" id="bestBeginner">00:00:00</span></button>
-        <button class="btn btn-primary btn-md" onclick="initGame('Medium')">Medium<br><span class="best-score" id="bestMedium">00:00:00</span></button>
-        <button class="btn btn-primary btn-md" onclick="initGame('Expert')">Expert<br><span class="best-score" id="bestExpert">00:00:00</span></button>
+            <button class="btn btn-default Beginner btn-md" onclick="initGame('Beginner')">Beginner<br><span class="best-score" id="bestBeginner">00:00:00</span></button>
+        <button class="btn btn-default Medium btn-md" onclick="initGame('Medium')">Medium<br><span class="best-score" id="bestMedium">00:00:00</span></button>
+        <button class="btn btn-default Expert btn-md" onclick="initGame('Expert')">Expert<br><span class="best-score" id="bestExpert">00:00:00</span></button>
         </span>
-        <h6>
-            <button class="btn btn-info btn-xs" disabled>Safe Click</button>
-            <button class="btn btn-info btn-xs" onclick="setUndo()">Undo</button>
-        </h6>
-
         <div class="clock">
             <span id="clocktext">00:00:00</span>
         </div>
@@ -41,14 +36,21 @@
 
     <div id="game-container" class="Ben"></div>
 
+    <div class="text-center">
+        <h6>
+            <button class="btn btn-info btn-xs" disabled>Safe Click</button>
+            <button class="btn btn-info btn-xs" onclick="setUndo()">Undo</button>
+        </h6>
+    </div>
+
     <!-- Modal GAME -->
     <div class="modal fade" id="gameModal" role="dialog">
         <div class="modal-dialog ">
 
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content" style="width: max-content;margin: auto;">
                 <div class="modal-body text-center">
-                    <h3></h3>
+                    <h3 style="margin: 0 15px 15px;"></h3>
                     <div></div>
                 </div>
             </div>
