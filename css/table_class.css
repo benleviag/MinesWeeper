@@ -7,6 +7,13 @@
     font-size: 16px;
     font-weight: 700;
     background: #d8d8d8;
+    transition: 0.3s 0.1s all;
+}
+
+.Ben #game td.square.blank:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    /*background: #e15e30;*/
+    box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .Ben #game td#face {
@@ -15,14 +22,24 @@
 }
 
 .Ben #game td#face div {
-    background-image: url('../images/sprite100.gif');
+    font-size: 20px;
+    opacity: 0.5;
+    transition: 0.25s all, 0.5s transform;
     margin: auto;
     cursor: pointer;
+    width: max-content;
+}
+
+.Ben #game td#face div:hover {
+    font-size: 20px;
+    opacity: 1;
+    transform: rotate(360deg) scale(1.2, 1.2);
 }
 
 .Ben #game td.square.blank {
     background: #e8e8e8;
     border: 1px solid #cecece;
+    cursor: pointer;
 }
 
 .Ben .open0:after {
@@ -69,10 +86,12 @@
     color: #7b7b7b;
 }
 
-.Ben .facesmile {
-    background-position: 0 -55px;
-    width: 26px;
-    height: 26px
+.Ben #game td#face div.facesmile {
+    background-image: unset;
+}
+
+.Ben .facesmile:after {
+    content: '🙂';
 }
 
 .Ben .facepressed {
@@ -87,16 +106,20 @@
     height: 26px
 }
 
-.Ben .facedead {
-    background-position: -78px -55px;
-    width: 26px;
-    height: 26px
+.Ben #game td#face div.facedead {
+    background-image: unset;
 }
 
-.Ben .facewin {
-    background-position: -104px -55px;
-    width: 26px;
-    height: 26px
+.Ben .facedead:after {
+    content: '😥';
+}
+
+.Ben #game td#face div.facewin {
+    background-image: unset;
+}
+
+.Ben .facewin:after {
+    content: '😎';
 }
 
 .Ben .bombflagged:after {

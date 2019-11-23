@@ -157,8 +157,9 @@ function GameWin() {
     renderBoard(gBoard, '#game-container');
 
     checkBestTime(gLevel.level);
-    $("#gameModal .modal-body div").html('<button type="button" class="btn btn-info btn-lg" onclick="initGame(\'' + gLevel.level + '\')">play again</button>');
-    $("#gameModal .modal-body h3").html('WIN <i class=" fa fa-hand-peace-o"></i>');
+    $("#gameModal .modal-body div").html('<button type="button" class="btn btn-warning  btn-lg" onclick="initGame(\'' + gLevel.level + '\')">play again</button>');
+    // $("#gameModal .modal-body h3").html('WIN <i class=" fa fa-hand-peace-o"></i>');
+    $("#gameModal .modal-body h3").html('<img src="images/congratulations.png">');
     $("#gameModal").modal();
 }
 
@@ -178,7 +179,7 @@ function GameOver() {
     gTimerInterval = null;
     renderBoard(gBoard, '#game-container');
 
-    $("#gameModal .modal-body div").html('<button type="button" class="btn btn-info btn-lg" onclick="initGame(\'' + gLevel.level + '\')">play again</button>');
+    $("#gameModal .modal-body div").html('<button type="button" class="btn btn-warning  btn-lg" onclick="initGame(\'' + gLevel.level + '\')">play again</button>');
     $("#gameModal .modal-body h3").html('<img src="images/game_over.jpg">');
     $("#gameModal").modal();
 }

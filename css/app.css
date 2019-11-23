@@ -1,6 +1,7 @@
 body {
     background-color: white;
     color: black;
+    background: url(images/agsquare.png);
 }
 
 .text-black {
@@ -16,12 +17,46 @@ body {
 }
 
 header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: max-content;
     text-align: center;
+    margin: 15px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 #gameModal img {
     max-height: 50vh;
     max-width: 100%;
+}
+
+.clock {
+    margin-top: 10px;
+}
+
+.btn-default {
+    transition: 0.25s;
+}
+
+.btn-default.Beginner:hover {
+    background: #5bc0de;
+    border-color: #5bc0de;
+    color: white;
+}
+
+.btn-default.Medium:hover {
+    background: #f0ad4e;
+    border-color: #f0ad4e;
+    color: white;
+}
+
+.btn-default.Expert:hover {
+    background: #d9534f;
+    border-color: #d9534f;
+    color: white;
 }
 
 .best-score {
